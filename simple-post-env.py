@@ -2,12 +2,12 @@ import requests
 import json
 import os
 
-url="https://webhook.site/eb21edee-955e-459d-aef3-d86e3a7da8c6"
+url=os.environ.get("URL")
+api_key=os.environ.get("API_KEY")
 post_data={
     "fname": "john",
     "lname": "smith"
 }
-api_key=os.envion.get("API_KEY")
 
 req=requests.post(url, \
                 headers={
