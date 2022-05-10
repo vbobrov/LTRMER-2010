@@ -1,5 +1,6 @@
 *.swp
 .*
+env
 !.gitignore
 !.vscode
 __pycache__
