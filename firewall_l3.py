@@ -41,7 +41,7 @@ for network in networks:
     #remove the last Default rule
     l3_rules["rules"].pop()
     #prepend the rules
-    l3_rules=dashboard.appliance.updateNetworkApplianceFirewallL3FirewallRules(network["id"],rules=new_rules)
+    l3_rules=dashboard.appliance.updateNetworkApplianceFirewallL3FirewallRules(network["id"],rules=new_rules+l3_rules["rules"])
     firewall_table=texttable.Texttable(max_width=0)
     firewall_table.header(["Policy","Protocol","Src","Src Port","Dst","Dst Port","Comment"])
     for rule in l3_rules["rules"]:
