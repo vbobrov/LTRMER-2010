@@ -1,7 +1,7 @@
 import texttable
 import meraki
 
-dashboard = meraki.DashboardAPI(suppress_logging=False)
+dashboard = meraki.DashboardAPI(suppress_logging=True)
 
 org_id="1045047"
 
