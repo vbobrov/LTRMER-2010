@@ -5,3 +5,4 @@ env
 !.gitignore
 !.vscode
 __pycache__
+terraform.tfstate*
