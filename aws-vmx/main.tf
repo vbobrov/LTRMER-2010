@@ -126,3 +126,7 @@ resource "aws_instance" "vmx" {
     Name = "vmx"
   }
 }
+
+output "public_ip" {
+  value = aws_instance.vmx.public_ip
+}
