@@ -11,6 +11,15 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "justMyCode": true
+        },
+        {
+            "name": "ssid_report",
+            "type": "python",
+            "request": "launch",
+            "program": "ssid_report.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": ["-n","L_720575940379285934"]
         }
     ]
 }
