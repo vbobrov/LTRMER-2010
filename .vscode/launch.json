@@ -20,6 +20,15 @@
             "console": "integratedTerminal",
             "justMyCode": true,
             "args": ["-n","L_720575940379285934"]
+        },
+        {
+            "name": "traffic_shaping",
+            "type": "python",
+            "request": "launch",
+            "program": "traffic_shaping.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": ["-n","L_720575940379285934"]
         }
     ]
 }
