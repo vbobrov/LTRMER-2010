@@ -36,7 +36,7 @@ dashboard = meraki.DashboardAPI(suppress_logging=True)
 networks=dashboard.organizations.getOrganizationNetworks(org_id)
 
 for network in networks:
-    print(f"Processing {network['name']}")
+    print(f"Adding rules to {network['name']}")
     l3_rules=dashboard.appliance.getNetworkApplianceFirewallL3FirewallRules(network["id"])
     #remove the last Default rule
     l3_rules["rules"].pop()
