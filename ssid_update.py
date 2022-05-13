@@ -1,4 +1,3 @@
-import texttable
 import meraki
 import argparse
 
