@@ -6,7 +6,7 @@ import os
 def lambda_handler(event, context):
     webex_api_key=os.environ["webex_api_key"]
     recipient=os.environ["recipient"]
-    if event['isBase64Encoded']:
+    if event["isBase64Encoded"]:
         alert_body=json.loads(base64.b64decode(event["body"]))
     else:
         alert_body=json.loads(event["body"])
@@ -21,6 +21,6 @@ def lambda_handler(event, context):
         }
     ).raise_for_status()
     return {
-        'statusCode': 200,
-        'body': json.dumps('Alert Processed')
+        "statusCode": 200,
+        "body": json.dumps("Alert Processed")
     }
