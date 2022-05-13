@@ -47,6 +47,15 @@
             "console": "integratedTerminal",
             "justMyCode": true,
             "args": ["-n","L_720575940379285934","-i","10","-s","corp3","-r","10.10.10.100","-k","meraki123","-d"]
+        },
+        {
+            "name": "sw_port_batch",
+            "type": "python",
+            "request": "launch",
+            "program": "sw_port_batch.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": ["-d","block_port"]
         }
     ]
 }

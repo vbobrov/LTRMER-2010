@@ -11,7 +11,7 @@ network_lookup={network["id"]:network["name"] for network in networks}
 devices=dashboard.organizations.getOrganizationDevices(org_id)
 
 device_table=texttable.Texttable(max_width=0)
-#org_table.set_cols_dtype(["i","t"])
+
 device_table.header(["network","name","model","serial","ip"])
 
 for device in devices:
