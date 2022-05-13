@@ -29,6 +29,24 @@
             "console": "integratedTerminal",
             "justMyCode": true,
             "args": ["-n","L_720575940379285934"]
+        },
+        {
+            "name": "sw_ports",
+            "type": "python",
+            "request": "launch",
+            "program": "sw_ports.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": ["-s","Q2EX-F375-5CU4"]
+        },
+        {
+            "name": "ssid_update",
+            "type": "python",
+            "request": "launch",
+            "program": "ssid_update.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": ["-n","L_720575940379285934","-i","10","-s","corp3","-r","10.10.10.100","-k","meraki123","-d"]
         }
     ]
 }
